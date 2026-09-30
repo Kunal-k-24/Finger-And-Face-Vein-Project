@@ -74,35 +74,6 @@ On first startup Docker will:
 3. Go to **Enroll**: capture your face via webcam and upload a finger vein image
 4. Go to **Verify**: repeat the biometric capture — the system accepts/rejects based on cosine similarity ≥ 0.75
 
----
-
-## Environment Variables
-
-| Variable | Default | Description |
-|---|---|---|
-| `DATABASE_URL` | `postgresql+asyncpg://user:pass@postgres:5432/biometric_db` | Async PostgreSQL URL |
-| `REDIS_URL` | `redis://:redispassword@redis:6379/0` | Redis connection URL |
-| `MINIO_ENDPOINT` | `minio:9000` | MinIO S3-compatible endpoint |
-| `MINIO_ACCESS_KEY` | `minioadmin` | MinIO access key |
-| `MINIO_SECRET_KEY` | `minioadmin` | MinIO secret key |
-| `MINIO_BUCKET` | `biometric-templates` | Bucket for blob storage |
-| `JWT_SECRET_KEY` | `change-me-in-production` | **Change this in production** |
-| `JWT_ALGORITHM` | `HS256` | JWT signing algorithm |
-| `JWT_ACCESS_EXPIRE_MINUTES` | `30` | Access token TTL |
-| `JWT_REFRESH_EXPIRE_DAYS` | `7` | Refresh token TTL |
-| `HE_POLY_MODULUS_DEGREE` | `8192` | CKKS polynomial modulus degree |
-| `DP_TARGET_EPSILON` | `3.0` | Differential privacy budget ε |
-| `DP_TARGET_DELTA` | `1e-5` | DP failure probability δ |
-| `DP_MAX_GRAD_NORM` | `1.0` | Per-sample gradient clip norm |
-| `FL_SERVER_ADDRESS` | `fl-server:8080` | Flower gRPC server address |
-| `FL_NUM_ROUNDS` | `10` | Default federated learning rounds |
-| `SIMILARITY_THRESHOLD` | `0.75` | Cosine similarity acceptance threshold |
-| `REDIS_PASSWORD` | `redispassword` | Redis AUTH password |
-| `POSTGRES_DB` | `biometric_db` | PostgreSQL database name |
-| `POSTGRES_USER` | `user` | PostgreSQL username |
-| `POSTGRES_PASSWORD` | `pass` | PostgreSQL password |
-
----
 
 ## API Endpoint Reference
 
