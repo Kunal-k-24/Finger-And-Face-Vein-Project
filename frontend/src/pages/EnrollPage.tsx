@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Shield, Fingerprint, UploadCloud, Loader2, CheckCircle, Check } from 'lucide-react';
+import { Shield, UploadCloud, Loader2, CheckCircle, Check } from 'lucide-react';
 import { CameraCapture } from '../components/CameraCapture';
 import { FingerVeinUpload } from '../components/FingerVeinUpload';
 import { apiClient } from '../api/client';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ShieldAlert, ShieldCheck, ScanFace, Loader2, Check } from 'lucide-react';
 import { CameraCapture } from '../components/CameraCapture';
 import { FingerVeinUpload } from '../components/FingerVeinUpload';

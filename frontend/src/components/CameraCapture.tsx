@@ -1,5 +1,5 @@
 import React, { useRef, useState, useCallback } from 'react';
-import { Camera, RefreshCw, Upload, Image as ImageIcon } from 'lucide-react';
+import { Camera, RefreshCw, Image as ImageIcon } from 'lucide-react';
 
 interface CameraCaptureProps {
   onCapture: (file: File) => void;
